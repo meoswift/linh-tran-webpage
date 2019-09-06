@@ -1,0 +1,19 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 2% 2% 2% 2%;
+  background-color: CadetBlue;
+  color: white;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.info {
+  margin-right: 70%;
+  margin: 0;
+  margin-right: 50%;
+}
