@@ -1,9 +1,11 @@
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'Arimo', sans-serif;
   margin: 2% 2% 2% 2%;
   background-color: CadetBlue;
   color: white;
   font-size: 20px;
+  margin-right: 70%;
+  margin-right: 50%;
 }
 
 h1 {
@@ -12,8 +14,20 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  margin-bottom: -10px;
+}
+
 .info {
-  margin-right: 70%;
-  margin: 0;
-  margin-right: 50%;
+  margin-bottom: 50px;
+}
+
+a {
+  color: white;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 0px;
 }
