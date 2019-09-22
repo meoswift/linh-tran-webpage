@@ -1,0 +1,242 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 470px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image:linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .3)), url("../images/sidebar.jpeg");
+  background-size: cover;
+  padding-top: 20px;
+  font-family: 'Ubuntu',sans-serif;
+}
+
+.nav-container {
+  margin-left: 500px;
+  margin-top: 2%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home a {
+  font-size: 25px;
+  text-decoration: none;
+  color: White;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.navbar a {
+  font-size: 25px;
+  text-decoration: none;
+  margin-left: 30px;
+  color: white;
+}
+
+.nav-container a:hover {
+  color: DarkGray;
+}
+
+.menu-container {
+  padding-top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu-container > a {
+  padding: 5px 0 5px 0;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  letter-spacing: 0.5px;
+  position: relative;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 150px;
+}
+
+.menu-container > a:hover {
+  color: white;
+}
+
+.menu-container > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.menu-container > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.main {
+  margin-left: 550px;
+  margin-top: 6%;
+  margin-right: 15%;
+  font-size: 30px;
+  -webkit-animation: fadein 2s;
+}
+
+#hi {
+  -webkit-animation: fadein 5s;
+}
+
+#name {
+  font-size: 110px;
+  margin-top: -5%;
+  font-family: "Abril Fatface", sans-serif;
+  -webkit-animation: fadein 1.5s;
+}
+
+#intro {
+  margin-top: -15%;
+  font-size: 25px;
+  -webkit-animation: fadein 7s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#title {
+  font-size: 40px;
+  font-family: "Abril Fatface", sans-serif;
+  background-color: FireBrick;
+  letter-spacing: 1px;
+  padding-left: 10px;
+}
+
+.proj-link {
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 1px;
+  font-size: 25px;
+  text-decoration: none;
+  color: Ivory;
+  display: inline-block;
+  position: relative;
+}
+
+.proj-link:hover {
+  color: Ivory;
+}
+
+.proj-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.proj-link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#description {
+  margin-top: 5px;
+  font-size: 20px;
+  margin-bottom: -10px;
+  color: Silver;
+}
+
+.contact-box {
+  font-family: 'Ubuntu',sans-serif;
+}
+
+#email {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  border-bottom: 0px;
+  text-decoration: none;
+}
+
+#email:hover {
+  border-bottom: 1px solid;
+}
+
+#phone {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+#home-button {
+  font-size: 50px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+footer h1 {
+  margin-top: 20%;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 15px;
+  color: gray;
+  padding: 10px;
+}
