@@ -31,20 +31,12 @@ body {
   text-decoration: none;
   margin-left: 30px;
   color: black;
+  border-bottom: solid 3px SteelBlue;
   display: inline-block;
 }
 
-.home > a:after {
-  display:block;
-  content: '';
-  border-bottom: solid 3px SteelBlue;
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-  transform-origin:  0% 50%;
-}
-
-.home > a:hover:after {
-  transform: scaleX(1);
+.home > a:hover {
+  border-bottom: solid 3px white;
 }
 
 .navbar {
@@ -56,22 +48,14 @@ body {
 .navbar > a {
   font-size: 25px;
   text-decoration: none;
+  border-bottom: solid 3px SteelBlue;
   margin-left: 30px;
   color: black;
   display: inline-block;
 }
 
-.navbar > a:after {
-  display:block;
-  content: '';
-  border-bottom: solid 3px SteelBlue;
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-  transform-origin:  0% 50%;
-}
-
-.navbar > a:hover:after {
-  transform: scaleX(1);
+.navbar > a:hover {
+  border-bottom: solid 3px white;
 }
 
 .menu-container {
@@ -172,33 +156,21 @@ body {
   text-decoration: none;
   color: SteelBlue;
   display: inline-block;
-  position: relative;
 }
 
-.proj-link:hover {
-  color: SteelBlue;
-}
-
-.proj-link:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
+.proj-link:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px SteelBlue;
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  transition: transform 250ms ease-in-out;
+  transform-origin:  0% 50%;
 }
 
-.proj-link:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
+.proj-link:hover:after {
   transform: scaleX(1);
 }
+
 
 #description {
   margin-top: 5px;
