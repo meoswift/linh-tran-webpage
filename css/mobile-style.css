@@ -55,13 +55,13 @@
 
   .home > a {
     font-size: 20px;
-    border-bottom: solid 1px FireBrick;
+    border-bottom: solid 1px Tan;
     margin-bottom: 2px;
   }
 
   .navbar > a {
     font-size: 20px;
-    border-bottom: solid 1px FireBrick;
+    border-bottom: solid 1px Tan;
     margin-bottom: 5px;
   }
 
@@ -101,7 +101,7 @@
   }
 
   .proj-link {
-    border-bottom: solid 1px FireBrick;
+    border-bottom: solid 1px Tan;
   }
 
   #menuToggle {

@@ -31,7 +31,7 @@ body {
   text-decoration: none;
   margin-left: 30px;
   color: black;
-  border-bottom: solid 3px FireBrick;
+  border-bottom: solid 2px Tan;
   display: inline-block;
 }
 
@@ -48,7 +48,7 @@ body {
 .navbar > a {
   font-size: 25px;
   text-decoration: none;
-  border-bottom: solid 3px FireBrick;
+  border-bottom: solid 2px Tan;
   margin-left: 30px;
   color: black;
   display: inline-block;
@@ -121,7 +121,8 @@ body {
   margin-top: -5%;
   font-family: "Abril Fatface", sans-serif;
   -webkit-animation: fadein 1.5s;
-  color: FireBrick;
+  color: SteelBlue;
+  border-bottom: 4px solid Tan;
 }
 
 #intro {
@@ -139,7 +140,7 @@ body {
 #title {
   font-size: 40px;
   font-family: "Abril Fatface", sans-serif;
-  background-color: FireBrick;
+  background-color: Tan;
   letter-spacing: 1px;
   padding-left: 10px;
   color: white;
@@ -150,7 +151,7 @@ body {
   letter-spacing: 1px;
   font-size: 25px;
   text-decoration: none;
-  color: FireBrick;
+  color: SteelBlue;
   display: inline-block;
 }
 
@@ -177,6 +178,12 @@ body {
 
 .contact-box {
   font-family: 'Ubuntu',sans-serif;
+  color: SteelBlue;
+}
+
+#contacts {
+  border-bottom: 3px solid SteelBlue;
+  padding-bottom: 50px;
 }
 
 #email {
@@ -187,21 +194,13 @@ body {
   display: inline-block;
 }
 
-#email:after {
-  display:block;
-  content: '';
-  border-bottom: solid 3px SteelBlue;
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-  transform-origin:  0% 50%;
-}
-
-#email:hover:after {
-  transform: scaleX(1);
+#email:hover {
+  border-bottom: 2px solid Tan;
 }
 
 #phone {
   font-family: 'Source Sans Pro', sans-serif;
+  color: black;
 }
 
 .fa {
