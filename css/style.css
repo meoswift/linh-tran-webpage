@@ -11,7 +11,8 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-image:linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .3)), url("../images/sidebar.jpeg");
+  background-image:linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("../images/sidebar.jpeg");
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   background-size: cover;
   padding-top: 20px;
   font-family: 'Ubuntu',sans-serif;
