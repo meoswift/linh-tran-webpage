@@ -26,7 +26,7 @@
   }
 
   .menu-container > a {
-    padding: 2px 0 2px 0;
+    padding: 6px 0 6px 0;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
@@ -92,11 +92,12 @@
     -webkit-animation: fadein 7s;
   }
 
-  #email,#title,#phone {
-    font-size: 25px;
+  #title {
+    font-size: 35px;
   }
 
-  #phone {
+  #email, #phone {
+    font-size: 25px;
     font-family: 'Source Sans Pro', sans-serif;
     color: black;
   }
