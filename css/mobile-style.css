@@ -1,0 +1,192 @@
+@media (max-width: 500px) {
+  #flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidenav {
+    height: 25%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    z-index: 0;
+    background-image:linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("../images/side-bar-phone.jpg");
+    padding-top: 0;
+    font-family: 'Ubuntu',sans-serif;
+  }
+
+  .menu-container {
+    padding-top: 45%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 5%;
+  }
+
+  .menu-container > a {
+    padding: 2px 0 2px 0;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 0.5px;
+    position: relative;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100px;
+  }
+
+  .nav-container {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .home > a {
+    font-size: 20px;
+    border-bottom: solid 1px SteelBlue;
+    margin-bottom: 2px;
+  }
+
+  .navbar > a {
+    font-size: 20px;
+    border-bottom: solid 1px SteelBlue;
+    margin-bottom: 5px;
+  }
+
+  .main {
+    margin-left: 10px;
+    margin-right: 2%;
+    margin-top: 50%;
+    -webkit-animation: fadein 2s;
+  }
+
+  #hi {
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  #name {
+    font-size: 60px;
+    margin-top: -5%;
+    font-family: "Abril Fatface", sans-serif;
+    -webkit-animation: fadein 1.5s;
+    color: SteelBlue;
+  }
+
+  #intro {
+    margin-right: 10%;
+    margin-top: -15%;
+    font-size: 20px;
+    -webkit-animation: fadein 7s;
+  }
+
+  #email,#title,#phone {
+    font-size: 35px;
+  }
+
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: white;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+#menu div {
+  opacity: 1;
+  }
+
+#menuToggle input:checked ~ #menu {
+   transform: none;
+}

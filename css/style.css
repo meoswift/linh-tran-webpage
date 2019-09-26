@@ -19,7 +19,7 @@ body {
 
 .nav-container {
   margin-left: 500px;
-  margin-top: 2%;
+  margin-top: 0;
   margin-right: 5%;
   display: flex;
   flex-direction: row;
@@ -135,10 +135,6 @@ body {
     to   { opacity: 1; }
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 
 #title {
   font-size: 40px;
