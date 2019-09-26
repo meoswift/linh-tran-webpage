@@ -93,7 +93,16 @@
   }
 
   #email,#title,#phone {
-    font-size: 35px;
+    font-size: 25px;
+  }
+
+  #phone {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+  }
+
+  .proj-link {
+    border-bottom: solid 1px SteelBlue;
   }
 
   #menuToggle {
@@ -108,7 +117,7 @@
     user-select: none;
   }
 
-#menuToggle input {
+  #menuToggle input {
     display: block;
     width: 40px;
     height: 32px;
