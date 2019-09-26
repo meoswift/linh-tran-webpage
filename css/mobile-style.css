@@ -73,12 +73,12 @@
   }
 
   #hi {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   #name {
     font-size: 60px;
-    margin-top: -5%;
+    margin-top: -7%;
     font-family: "Abril Fatface", sans-serif;
     -webkit-animation: fadein 1.5s;
     color: SteelBlue;
