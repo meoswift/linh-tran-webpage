@@ -181,10 +181,6 @@ body {
   color: SteelBlue;
 }
 
-#contacts {
-  border-bottom: 3px solid SteelBlue;
-  padding-bottom: 50px;
-}
 
 #email {
   font-family: 'Source Sans Pro', sans-serif;
