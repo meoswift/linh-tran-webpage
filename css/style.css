@@ -64,7 +64,11 @@ p, #description {
 
 .proj-link {
   font-size: 1.5em;
-  color: goldenrod;
+  margin: 0;
+}
+
+.link, .link:hover {
+  color: steelblue;
 }
 
 .hidden {
