@@ -4,7 +4,7 @@ body {
 }
 
 .navbar-brand {
-  font-size: 1.25em !important;
+  font-size: 120% !important;
 }
 
 nav {
@@ -23,7 +23,8 @@ nav {
 }
 
 img {
-  height: 100%;
+  width: 28%;
+  height: auto;
   box-shadow:
   12px 16px 0 0px white,
   14px 14px 0 0px black,
@@ -34,7 +35,7 @@ img {
 #image {
   position: fixed;
   z-index: 1;
-  height: 60%;
+  height: auto;
 }
 
 #main {
@@ -91,8 +92,31 @@ a:hover {
   }
 
   #main {
-    flex-wrap: 1;
-    flex-direction: column;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 800px) {
+  #outside {
+    display: inline;
+  }
+
+  #image {
+    display: none;
+  }
+
+  #tabs {
+    margin-left: 0%;
+  }
+
+  #main {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1500px) {
+  p, #description {
+    font-size: 130%;
   }
 
 }

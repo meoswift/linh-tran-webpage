@@ -7,7 +7,6 @@ navbar.addEventListener('click', e => {
     if (e.target.tagName.toLowerCase() === 'a') {
       selectedTabId = e.target.id   
     }  
-    console.log(e.target);
     render();
 })
 
