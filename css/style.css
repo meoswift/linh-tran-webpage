@@ -4,7 +4,7 @@ body {
 }
 
 .navbar-brand {
-  font-size: 120% !important;
+  font-size: 1.25em!important;
 }
 
 nav {
@@ -23,19 +23,16 @@ nav {
 }
 
 img {
-  width: 28%;
+  max-width: 25vw;
   height: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8rem;
   box-shadow:
   12px 16px 0 0px white,
   14px 14px 0 0px black,
   14px 18px 0 0px black,
   10px 18px 0 0px black;
-}
-
-#image {
-  position: fixed;
-  z-index: 1;
-  height: auto;
 }
 
 #main {
@@ -45,15 +42,15 @@ img {
   color: rgba(0,0,0,0.5);
 }
 
-p, #description {
-  font-size: 110%;
-}
-
 #tabs {
   display: flex;
   align-self: center;
   justify-content: center;
-  margin-left: 40%;
+  margin-left: 5%;
+}
+
+p, #description {
+  font-size: 110%;
 }
 
 #title {
@@ -94,12 +91,6 @@ a:hover {
   #main {
     display: inline-block;
   }
-}
-
-@media (max-width: 800px) {
-  #outside {
-    display: inline;
-  }
 
   #image {
     display: none;
@@ -107,10 +98,6 @@ a:hover {
 
   #tabs {
     margin-left: 0%;
-  }
-
-  #main {
-    display: inline-block;
   }
 }
 
